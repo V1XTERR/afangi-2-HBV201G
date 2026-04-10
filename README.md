@@ -2,9 +2,6 @@
 
 Kvikmyndahúskerfi þar sem notandi getur skoðað kvikmyndir, pantað miða og bætt við nýjum kvikmyndum.
 
-## Höfundur
-Viktor Blær Hafþórsson – hafthorsson14@gmail.com
-
 ## Uppbygging verkefnis
 
 ```
