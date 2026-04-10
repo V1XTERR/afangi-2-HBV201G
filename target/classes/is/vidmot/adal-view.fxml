@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="is.vidmot.controller.AdalController"
+      prefWidth="750" prefHeight="550">
+
+    <VBox spacing="0" prefWidth="750" prefHeight="550">
+
+        <!-- Header -->
+        <HBox styleClass="header" prefHeight="70" alignment="CENTER_LEFT" spacing="15">
+            <Label text="🎬 Kvikmyndahús" styleClass="header-title"/>
+        </HBox>
+
+        <!-- Content area -->
+        <HBox spacing="0" prefHeight="480" VBox.vgrow="ALWAYS">
+
+            <!-- Sidebar -->
+            <VBox styleClass="sidebar" prefWidth="200" spacing="12" alignment="TOP_CENTER">
+                <padding><Insets top="20" left="15" right="15" bottom="20"/></padding>
+                <Label text="Aðgerðir" styleClass="sidebar-title"/>
+                <Button fx:id="skoðaTakki" text="Skoða kvikmynd" onAction="#onSkoða"
+                        styleClass="sidebar-btn" prefWidth="170"/>
+                <Button text="Bæta við" onAction="#onBaetaVid"
+                        styleClass="sidebar-btn sidebar-btn-green" prefWidth="170"/>
+                <Button fx:id="eydaTakki" text="Eyða" onAction="#onEyda"
+                        styleClass="sidebar-btn sidebar-btn-red" prefWidth="170"/>
+            </VBox>
+
+            <!-- Main list area -->
+            <VBox spacing="10" HBox.hgrow="ALWAYS" styleClass="main-area">
+                <padding><Insets top="20" left="20" right="20" bottom="20"/></padding>
+                <Label text="Kvikmyndir í boði" styleClass="section-title"/>
+                <ListView fx:id="kvikmyndaListi" VBox.vgrow="ALWAYS" styleClass="movie-list"/>
+            </VBox>
+        </HBox>
+    </VBox>
+</Pane>

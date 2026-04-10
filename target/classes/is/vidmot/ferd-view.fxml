@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="is.vidmot.controller.FerdController"
+      prefWidth="750" prefHeight="550">
+
+    <VBox spacing="0" prefWidth="750" prefHeight="550">
+
+        <!-- Header -->
+        <HBox styleClass="header" prefHeight="70" alignment="CENTER_LEFT" spacing="15">
+            <Button text="← Til baka" onAction="#onTilbaka" styleClass="back-btn"/>
+            <Label text="🎬 Kvikmyndahús" styleClass="header-title"/>
+        </HBox>
+
+        <!-- Detail card -->
+        <VBox styleClass="detail-card" VBox.vgrow="ALWAYS" spacing="0">
+            <padding><Insets top="40" left="60" right="60" bottom="40"/></padding>
+
+            <Label fx:id="titillLabel" text="" styleClass="movie-title"/>
+
+            <HBox spacing="50" alignment="CENTER_LEFT" style="-fx-padding: 30 0 30 0;">
+                <VBox spacing="12">
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <Label text="Leikstjóri:" styleClass="detail-label"/>
+                        <Label fx:id="leikstjoriLabel" text="" styleClass="detail-value"/>
+                    </HBox>
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <Label text="Lengd:" styleClass="detail-label"/>
+                        <Label fx:id="lengdLabel" text="" styleClass="detail-value"/>
+                    </HBox>
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <Label text="Útgáfuár:" styleClass="detail-label"/>
+                        <Label fx:id="utgafuarLabel" text="" styleClass="detail-value"/>
+                    </HBox>
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <Label text="Einkunn:" styleClass="detail-label"/>
+                        <Label fx:id="einkunnLabel" text="" styleClass="einkunn-label"/>
+                    </HBox>
+                </VBox>
+            </HBox>
+
+            <Region VBox.vgrow="ALWAYS"/>
+
+            <HBox spacing="15" alignment="CENTER_RIGHT">
+                <Button text="🎟 Panta miða" onAction="#onPanta" styleClass="panta-btn"/>
+            </HBox>
+        </VBox>
+    </VBox>
+</Pane>

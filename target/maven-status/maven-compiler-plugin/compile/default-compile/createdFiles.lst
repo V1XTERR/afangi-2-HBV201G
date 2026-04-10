@@ -1,0 +1,11 @@
+is\vidmot\KvikmyndahusApp.class
+is\vidmot\controller\FerdController.class
+is\vidmot\switcher\ViewSwitcher.class
+is\vidmot\switcher\View.class
+is\vidmot\controller\EydaDialogController.class
+is\vidmot\controller\PantunDialogController.class
+is\vinnlsa\Kvikmynd.class
+is\vidmot\controller\AdalController.class
+is\vidmot\controller\NyKvikmyndDialogController.class
+is\vinnlsa\Pantun.class
+is\vidmot\controller\AdalController$1.class
